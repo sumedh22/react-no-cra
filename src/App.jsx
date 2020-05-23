@@ -1,7 +1,21 @@
 import React from "react";
 import './css/main.css'
+import logo from "./images/logo.svg";
 export default () => {
-    return <div>
-        Hello from React app!
-    </div>
+    return <div className="App">
+    <header className="App-header">
+      <img src={logo} className="App-logo" alt="logo" />
+      <p>
+        Edit <code>src/App.js</code> and save to reload.
+      </p>
+      <a
+        className="App-link"
+        href="https://reactjs.org"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn React
+      </a>
+    </header>
+  </div>
 }

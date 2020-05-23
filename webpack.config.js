@@ -25,6 +25,9 @@ module.exports = {
                     'style-loader',
                     'css-loader',
                 ]
+            }, {
+                test: /\.svg$/,
+                use: 'file-loader'
             }
         ]
     },
@@ -35,7 +38,7 @@ module.exports = {
             filename: "index.html"
         })
     ],
-    resolve:{
-        extensions:['.js','.jsx','.css']
+    resolve: {
+        extensions: ['.js', '.jsx']
     }
 }
